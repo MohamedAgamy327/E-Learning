@@ -1,3 +1,345 @@
-<p>
-  home
-</p>
+<div class="wrapper d-flex align-items-stretch">
+  <nav id="sidebar" class="SideBarMenu main-scroll">
+    <div class="scroll-bar-wrap animate__animated animate__fadeInDown">
+      <div class="sidebar-sticky pt-3 scroll-box">
+        <!--Card User Profile-->
+        <div class="card User_Card">
+          <div class="card-header">
+
+            <div class=" cpanel-setting-btn drop-style float-lx">
+              <div class="dropdown">
+                <button class="btn" type="button" id="menu1" data-toggle="dropdown">
+                  <i class="fas fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu animate__animated animate__fadeInDown" role="menu" aria-labelledby="menu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="MasterPage_ar.html">عربى</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" onclick="toggleTheme()" id="slider" tabindex="-1">Change
+                      theme</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation">
+                    <a role="menuitem" class="logout" tabindex="-1" href="intro_en.html"><i
+                        class="fas fa-power-off"></i><span>log out</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="rate float-rx">
+              <i class="fa fa-star"></i>
+              <span class="num">5</span>
+            </div>
+          </div>
+
+          <div class="person_image"><img src="./assets/img/cpanel/invest.jpg" alt="User Image" /></div>
+
+          <div class="card-body">
+            <h1>Mohamed Abdullah</h1>
+            <h2>Secondary first year</h2>
+          </div>
+
+          <div class="card-footer">
+            <div class="row">
+              <div class="col person_static">
+                <img src="./assets/img/cpanel/man.png" alt="">
+                <span class="person_static_no">40</span>
+                <div>
+                  <h1>Following</h1>
+                  <h2>Explainers</h2>
+                </div>
+              </div>
+              <div class="col person_static">
+                <img src="./assets/img/cpanel/award.png" alt="">
+                <span class="person_static_no">40</span>
+                <div>
+                  <h1>Holds</h1>
+                  <h2>awards</h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Main Menu Slide Bar-->
+        <ul class="nav flex-column NavMenuSideBar" id="MenuNav">
+          <li class="nav-item">
+            <a href="Dailytask_en.html">
+              <!--<img src="./assets/img/cpanel/members.png" alt="">-->
+              <i class="fa fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-toggle="collapse" data-target="#submenu-2" class="MenuArow" aria-expanded="true">
+              <img src="./assets/img/cpanel/content.png" alt="">
+              <!--<i class="fa fa-id-card"></i>-->
+              <span>Content</span>
+            </a>
+            <ul id="submenu-2" class="collapse show SubMenu theme-Bg2" data-parent="#MenuNav">
+              <li><a href="CurriculaStudent_en.html">Carricula</a></li>
+              <li><a href="Exams_en.html">Exam</a></li>
+              <li><a href="Inspector-table_en.html">4E Inspector</a></li>
+              <li><a href="#">I Explain</a></li>
+              <li><a href="Recommendations_en.html">Recommendations</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" data-toggle="collapse" data-target="#submenu-3" class="MenuArow collapsed">
+              <img src="./assets/img/cpanel/thinking.png" alt="">
+              <!--<i class="fa fa-id-card"></i>-->
+              <span>Communicate</span>
+            </a>
+            <ul id="submenu-3" class="collapse SubMenu theme-Bg2" data-parent="#MenuNav">
+              <li><a href="live-schedule_en.html">Live</a></li>
+              <li><a href="Meeting_en.html">Meeting</a></li>
+              <li><a href="#">Chat</a></li>
+              <li><a href="Members_en.html">Members</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item">
+            <a href="#" data-toggle="collapse" data-target="#submenu-4" class="MenuArow collapsed">
+              <img src="./assets/img/cpanel/responsability.png" alt="">
+              <!--<i class="fa fa-id-card"></i>-->
+              <span>Responsibility</span>
+            </a>
+            <ul id="submenu-4" class="collapse SubMenu theme-Bg2" data-parent="#MenuNav">
+              <li><a href="Notifications_en.html">Notification</a></li>
+              <li><a href="Directive_en.html">Directive</a></li>
+              <li><a href="schedule-3_en.html">Schedule</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <div class="cover-bar"></div>
+    </div>
+  </nav>
+
+  <!-- Page Content  -->
+  <main role="main" id="content" class=" home-content theme-Bg1">
+    <header class="TopBar animate__animated animate__fadeInDown">
+      <!--<a href="#" class="LogoTit"><img src="./assets/img/logo-cpanel-light.png" alt="logo"><span class="theme-Bg"> Student </span></a>-->
+
+      <div class="cpanel-logo">
+
+        <a href="#" class="Logo-cp LogoTit xbardown">
+          <img src="./assets/img/logo-cpanel-dark.png" id="CpanelImag" alt="logo">
+          <span class="theme-Bg"> Student </span>
+        </a>
+      </div>
+      <div class="custom-menu float-rx">
+        <div class="toggleMenu xbardown" id="sidebarCollapse">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+      </div>
+
+      <div class="TopBarBtns">
+        <ul class="nav notisBar">
+          <li class="dropdown">
+            <a class="dropdown-toggle btn notification" title="message" data-toggle="dropdown" href="#"
+              aria-expanded="true">
+              <i class="fa fa-envelope fa-fw"></i>
+              <span>3</span>
+            </a>
+            <ul class="dropdown-menu dropdown-messages animate__animated animate__fadeInDown">
+              <div class="dropdown-header bg-light"><strong>You have 3 pending messages</strong></div>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item d-flex">
+                  <div class="msg-profile">
+                    <img src="./assets/img/cpanel/invest.jpg" alt="..." class="img-fluid rounded-circle">
+                  </div>
+                  <div class="msg-body">
+                    <h3 class="h5">Mohamed Ali</h3>
+                    <span>sent you a direct message</span>
+                    <small>3 days ago at 7:58 pm - 10/06/2020</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item d-flex">
+                  <div class="msg-profile">
+                    <img src="./assets/img/cpanel/invest.jpg" alt="..." class="img-fluid rounded-circle">
+                  </div>
+                  <div class="msg-body">
+                    <h3 class="h5">Mohamed Ali</h3>
+                    <span>sent you a direct message</span>
+                    <small>3 days ago at 7:58 pm - 10/06/2020</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item d-flex">
+                  <div class="msg-profile">
+                    <img src="./assets/img/cpanel/invest.jpg" alt="..." class="img-fluid rounded-circle">
+                  </div>
+                  <div class="msg-body">
+                    <h3 class="h5">Mohamed Ali</h3>
+                    <span>sent you a direct message</span>
+                    <small>3 days ago at 7:58 pm - 10/06/2020</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center Clr8">
+                  <strong> <i class="fa fa-envelope pr-2"></i>Read all messages </strong>
+                </a>
+              </li>
+            </ul>
+            <!-- /.dropdown-messages -->
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle btn notification" title="tasks" data-toggle="dropdown" href="#">
+              <i class="fa fa-tasks fa-fw"></i>
+              <span>5</span>
+            </a>
+            <div class="dropdown-menu dropdown-messages dropdown-tasks animate__animated animate__fadeInDown">
+              <div class="dropdown-header bg-light"><strong>You have 5 pending tasks</strong></div>
+              <a class="dropdown-item d-block" href="#">
+                <div class="small mb-1">Upgrade <span class="float-rx"><strong>0%</strong></span></div>
+                <span class="progress progress-xs">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </span>
+              </a>
+              <a class="dropdown-item d-block" href="#">
+                <div class="small mb-1"> task one<span class="float-rx"><strong>25%</strong></span></div>
+                <span class="progress progress-xs">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </span>
+              </a>
+              <a class="dropdown-item d-block" href="#">
+                <div class="small mb-1">Solving the fifth lesson questions <span
+                    class="float-rx"><strong>50%</strong></span></div>
+                <span class="progress progress-xs">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </span>
+              </a>
+              <a class="dropdown-item d-block" href="#">
+                <div class="small mb-1">watching content<span class="float-rx"><strong>75%</strong></span></div>
+                <span class="progress progress-xs">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </span>
+              </a>
+              <a class="dropdown-item d-block" href="#">
+                <div class="small mb-1">Understanding the lessons <span class="float-rx"><strong>100%</strong></span>
+                </div>
+                <span class="progress progress-xs">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </span>
+              </a>
+              <a class="dropdown-item text-center border-top Clr8" href="#"><strong><i class="fa fa-tasks pr-2"></i>
+                  View all tasks</strong></a>
+            </div>
+
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle btn notification" title="notification" data-toggle="dropdown" href="#">
+              <i class="fa fa-bell fa-fw"></i>
+              <span>4</span>
+            </a>
+            <ul class="dropdown-menu dropdown-messages dropdown-alerts animate__animated animate__fadeInDown">
+              <div class="dropdown-header bg-light"><strong>You have 4 pending notifications</strong></div>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item">
+                  <div class="notification-content"><i class="fa fa-envelope pr-2"></i>You have 6 new messages </div>
+                  <div class="notification-time"><small>4 minutes ago</small></div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item">
+                  <div class="notification-content"><i class="fab fa-twitter pr-2"></i>You have 2 followers</div>
+                  <div class="notification-time"><small>4 minutes ago</small></div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item">
+                  <div class="notification-content"><i class="fa fa-upload pr-2"></i>Server Rebooted</div>
+                  <div class="notification-time"><small>4 minutes ago</small></div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item">
+                  <div class="notification-content"><i class="fab fa-twitter pr-2"></i>You have 2 followers</div>
+                  <div class="notification-time"><small>10 minutes ago</small></div>
+                </a>
+              </li>
+              <li>
+                <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center Clr8">
+                  <strong> <i class="fa fa-bell pr-2"></i>view all notifications </strong>
+                </a>
+              </li>
+            </ul>
+            <!-- /.dropdown-alerts -->
+          </li>
+
+        </ul>
+
+
+        <a class="btn BgClr8 float-rx" href="#" title="I explain"><i class="fa fa-chalkboard-teacher"></i> <label>I
+            explain</label></a>
+        <a class="btn BgClr7 float-rx" href="#" title="Live"><i class="fa fa-video"></i> <label>Live</label></a>
+      </div>
+
+      <div class="TopBarSearch">
+        <form class="navbar-search" role="search">
+          <a href="#" class="SearchBtn"><i class="icofont-search-2"></i> </a>
+          <input type="text" class="search-query" placeholder="Search your lessons or explainers ...">
+        </form>
+      </div>
+
+      <a href="#" class="float-rx icoBtn"><i class="fa fa-ellipsis-v"></i></a>
+      <a href="#" class="float-rx icoBtn2"><i class="icofont-search-2"></i></a>
+
+    </header>
+
+    <section class="content-body">
+      <div class="container-fluid">
+        <h1 class="theme-color"> Title Main</h1>
+        <div class="wordLogo theme-color"><img src="./assets/img/favicon.ico" alt=""><span>xplain</span></div>
+        <h2 class="mb-4">Sidebar #05</h2>
+        <hr>
+        <p>
+          What is the concept of e-learning? What do you think of this concept? Answer:<br>
+
+          E-learning can be ideally defined as: extending the concept of the teaching and learning process beyond the
+          boundaries of the traditional classroom walls and launching to a rich multi-source environment in which
+          interactive distance learning techniques will have a fundamental role in it so that the role of both the
+          teacher and the learner is reformulated. ” That is, e-learning is not a substitute for the teacher but rather
+          enhances its role as a supervisor, guide and organizer of the educational process, at a time when the learner
+          takes the role of leadership and control in the educational process in terms of the time he wants to study,
+          and choosing the appropriate study modes for him and his control of electronic operations from downloading or
+          sending files Which leads to the development of his intellectual skills.
+
+        </p>
+        <div class="text-justify">
+          <p>E-learning can be ideally defined as: extending the concept of the teaching and learning process beyond the
+            boundaries of the traditional classroom walls and launching to a rich multi-source environment in which
+            interactive distance learning techniques will have a fundamental role in it so that the role of both the
+            teacher and the learner is reformulated. ” That is, e-learning is not a substitute for the teacher but
+            rather enhances its role as a supervisor, guide and organizer of the educational process, at a time when the
+            learner takes the role of leadership and control in the educational process in terms of the time he wants to
+            study, and choosing the appropriate study modes for him and his control of electronic operations from
+            downloading or sending files Which leads to the development of his intellectual skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <span> Copyright © 2020 <a href="">4explain</a> All rights reserved.</span>
+    </footer>
+  </main>
+
+</div>

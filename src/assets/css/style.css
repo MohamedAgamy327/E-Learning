@@ -3716,9 +3716,9 @@ td.inspector span {
   width: 31px;
 }
 /* mouse grab icon */
-.grabbing {
+/* .grabbing {
   cursor: url(grabbing.png) 8 8, move;
-}
+} */
 
 /* fix */
 .owl-carousel .owl-wrapper,
