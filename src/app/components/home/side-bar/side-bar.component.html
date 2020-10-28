@@ -4,21 +4,23 @@
       <!--Card User Profile-->
       <div class="card User_Card">
         <div class="card-header">
-
           <div class=" cpanel-setting-btn drop-style float-lx">
             <div class="dropdown">
               <button class="btn" type="button" id="menu1" data-toggle="dropdown">
                 <i class="fas fa-cog"></i>
               </button>
               <ul class="dropdown-menu animate__animated animate__fadeInDown" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="MasterPage_ar.html">عربى</a></li>
+                <li *ngIf="currentLang=='en'" role="presentation"><a role="menuitem" tabindex="-1"
+                    (click)="setLang('ar')">عربى</a></li>
+                <li *ngIf="currentLang=='ar'" role="presentation"><a role="menuitem" tabindex="-1"
+                    (click)="setLang('en')">English</a></li>
                 <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" onclick="toggleTheme()" id="slider" tabindex="-1">Change
-                    theme</a></li>
+                <li role="presentation"><a role="menuitem" onclick="toggleTheme()" id="slider"
+                    tabindex="-1">{{'ChangeTheme' | translate}}</a></li>
                 <li role="presentation" class="divider"></li>
                 <li role="presentation">
                   <a role="menuitem" class="logout" tabindex="-1" href="intro_en.html"><i
-                      class="fas fa-power-off"></i><span>log out</span></a>
+                      class="fas fa-power-off"></i><span>{{'LogOut' | translate}}</span></a>
                 </li>
               </ul>
             </div>
@@ -33,8 +35,8 @@
         <div class="person_image"><img src="./assets/img/cpanel/invest.jpg" alt="User Image" /></div>
 
         <div class="card-body">
-          <h1>Mohamed Abdullah</h1>
-          <h2>Secondary first year</h2>
+          <h1>{{'MohamedAbdullah'|translate}}</h1>
+          <h2>{{'Secondaryfirstyear'|translate}}</h2>
         </div>
 
         <div class="card-footer">
@@ -43,16 +45,16 @@
               <img src="./assets/img/cpanel/man.png" alt="">
               <span class="person_static_no">40</span>
               <div>
-                <h1>Following</h1>
-                <h2>Explainers</h2>
+                <h1>{{'Following'|translate}}</h1>
+                <h2>{{'Explainers'|translate}}</h2>
               </div>
             </div>
             <div class="col person_static">
               <img src="./assets/img/cpanel/award.png" alt="">
               <span class="person_static_no">40</span>
               <div>
-                <h1>Holds</h1>
-                <h2>awards</h2>
+                <h1>{{'Holds'|translate}}</h1>
+                <h2>{{'awards'|translate}}</h2>
               </div>
             </div>
           </div>
@@ -66,21 +68,21 @@
           <a href="Dailytask_en.html">
             <!--<img src="./assets/img/cpanel/members.png" alt="">-->
             <i class="fa fa-home"></i>
-            <span>Home</span>
+            <span>{{'Home' | translate}}</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#" data-toggle="collapse" data-target="#submenu-2" class="MenuArow" aria-expanded="true">
             <img src="./assets/img/cpanel/content.png" alt="">
             <!--<i class="fa fa-id-card"></i>-->
-            <span>Content</span>
+            <span>{{'Content' | translate}}</span>
           </a>
           <ul id="submenu-2" class="collapse show SubMenu theme-Bg2" data-parent="#MenuNav">
-            <li><a href="CurriculaStudent_en.html">Carricula</a></li>
-            <li><a href="Exams_en.html">Exam</a></li>
-            <li><a href="Inspector-table_en.html">4E Inspector</a></li>
+            <li><a href="CurriculaStudent_en.html">{{'Carricula'|translate}}</a></li>
+            <li><a href="Exams_en.html">{{'Exam'|translate}}</a></li>
+            <li><a href="Inspector-table_en.html">{{'4EInspector'|translate}}</a></li>
             <li><a href="#">I Explain</a></li>
-            <li><a href="Recommendations_en.html">Recommendations</a></li>
+            <li><a href="Recommendations_en.html">{{'Recommendations' |translate}}</a></li>
           </ul>
         </li>
 
@@ -88,13 +90,13 @@
           <a href="#" data-toggle="collapse" data-target="#submenu-3" class="MenuArow collapsed">
             <img src="./assets/img/cpanel/thinking.png" alt="">
             <!--<i class="fa fa-id-card"></i>-->
-            <span>Communicate</span>
+            <span>{{'Communicate'|translate}}</span>
           </a>
           <ul id="submenu-3" class="collapse SubMenu theme-Bg2" data-parent="#MenuNav">
-            <li><a href="live-schedule_en.html">Live</a></li>
-            <li><a href="Meeting_en.html">Meeting</a></li>
+            <li><a href="live-schedule_en.html">{{'Live'|translate}}</a></li>
+            <li><a href="Meeting_en.html">{{'Meeting'|translate}}</a></li>
             <li><a href="#">Chat</a></li>
-            <li><a href="Members_en.html">Members</a></li>
+            <li><a href="Members_en.html">{{'Members'|translate}}</a></li>
           </ul>
         </li>
 
@@ -104,12 +106,12 @@
           <a href="#" data-toggle="collapse" data-target="#submenu-4" class="MenuArow collapsed">
             <img src="./assets/img/cpanel/responsability.png" alt="">
             <!--<i class="fa fa-id-card"></i>-->
-            <span>Responsibility</span>
+            <span>{{'Responsibility'|translate}}</span>
           </a>
           <ul id="submenu-4" class="collapse SubMenu theme-Bg2" data-parent="#MenuNav">
-            <li><a href="Notifications_en.html">Notification</a></li>
-            <li><a href="Directive_en.html">Directive</a></li>
-            <li><a href="schedule-3_en.html">Schedule</a></li>
+            <li><a href="Notifications_en.html">{{'Notification' | translate}}</a></li>
+            <li><a href="Directive_en.html">{{'Directive' | translate}}</a></li>
+            <li><a href="schedule-3_en.html">{{'Schedule' | translate}}</a></li>
           </ul>
         </li>
       </ul>
