@@ -1,3 +1,120 @@
-<p>
-  side bar
-</p>
+<nav id="sidebar" class="SideBarMenu main-scroll">
+  <div class="scroll-bar-wrap animate__animated animate__fadeInDown">
+    <div class="sidebar-sticky pt-3 scroll-box">
+      <!--Card User Profile-->
+      <div class="card User_Card">
+        <div class="card-header">
+
+          <div class=" cpanel-setting-btn drop-style float-lx">
+            <div class="dropdown">
+              <button class="btn" type="button" id="menu1" data-toggle="dropdown">
+                <i class="fas fa-cog"></i>
+              </button>
+              <ul class="dropdown-menu animate__animated animate__fadeInDown" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="MasterPage_ar.html">عربى</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" onclick="toggleTheme()" id="slider" tabindex="-1">Change
+                    theme</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                  <a role="menuitem" class="logout" tabindex="-1" href="intro_en.html"><i
+                      class="fas fa-power-off"></i><span>log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rate float-rx">
+            <i class="fa fa-star"></i>
+            <span class="num">5</span>
+          </div>
+        </div>
+
+        <div class="person_image"><img src="./assets/img/cpanel/invest.jpg" alt="User Image" /></div>
+
+        <div class="card-body">
+          <h1>Mohamed Abdullah</h1>
+          <h2>Secondary first year</h2>
+        </div>
+
+        <div class="card-footer">
+          <div class="row">
+            <div class="col person_static">
+              <img src="./assets/img/cpanel/man.png" alt="">
+              <span class="person_static_no">40</span>
+              <div>
+                <h1>Following</h1>
+                <h2>Explainers</h2>
+              </div>
+            </div>
+            <div class="col person_static">
+              <img src="./assets/img/cpanel/award.png" alt="">
+              <span class="person_static_no">40</span>
+              <div>
+                <h1>Holds</h1>
+                <h2>awards</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--Main Menu Slide Bar-->
+      <ul class="nav flex-column NavMenuSideBar" id="MenuNav">
+        <li class="nav-item">
+          <a href="Dailytask_en.html">
+            <!--<img src="./assets/img/cpanel/members.png" alt="">-->
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" data-toggle="collapse" data-target="#submenu-2" class="MenuArow" aria-expanded="true">
+            <img src="./assets/img/cpanel/content.png" alt="">
+            <!--<i class="fa fa-id-card"></i>-->
+            <span>Content</span>
+          </a>
+          <ul id="submenu-2" class="collapse show SubMenu theme-Bg2" data-parent="#MenuNav">
+            <li><a href="CurriculaStudent_en.html">Carricula</a></li>
+            <li><a href="Exams_en.html">Exam</a></li>
+            <li><a href="Inspector-table_en.html">4E Inspector</a></li>
+            <li><a href="#">I Explain</a></li>
+            <li><a href="Recommendations_en.html">Recommendations</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" data-toggle="collapse" data-target="#submenu-3" class="MenuArow collapsed">
+            <img src="./assets/img/cpanel/thinking.png" alt="">
+            <!--<i class="fa fa-id-card"></i>-->
+            <span>Communicate</span>
+          </a>
+          <ul id="submenu-3" class="collapse SubMenu theme-Bg2" data-parent="#MenuNav">
+            <li><a href="live-schedule_en.html">Live</a></li>
+            <li><a href="Meeting_en.html">Meeting</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="Members_en.html">Members</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a href="#" data-toggle="collapse" data-target="#submenu-4" class="MenuArow collapsed">
+            <img src="./assets/img/cpanel/responsability.png" alt="">
+            <!--<i class="fa fa-id-card"></i>-->
+            <span>Responsibility</span>
+          </a>
+          <ul id="submenu-4" class="collapse SubMenu theme-Bg2" data-parent="#MenuNav">
+            <li><a href="Notifications_en.html">Notification</a></li>
+            <li><a href="Directive_en.html">Directive</a></li>
+            <li><a href="schedule-3_en.html">Schedule</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <div class="cover-bar"></div>
+  </div>
+</nav>
