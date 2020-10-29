@@ -10,10 +10,10 @@
                 <i class="fas fa-cog"></i>
               </button>
               <ul class="dropdown-menu animate__animated animate__fadeInDown" role="menu" aria-labelledby="menu1">
-                <li *ngIf="currentLang=='en'" role="presentation"><a role="menuitem" tabindex="-1"
-                    (click)="setLang('ar')">عربى</a></li>
-                <li *ngIf="currentLang=='ar'" role="presentation"><a role="menuitem" tabindex="-1"
-                    (click)="setLang('en')">English</a></li>
+                <li *ngIf="currentLang=='en'" (click)="setLang('ar')" role="presentation"><a role="menuitem"
+                    tabindex="-1">عربى</a></li>
+                <li *ngIf="currentLang=='ar'" (click)="setLang('en')" role="presentation"><a role="menuitem"
+                    tabindex="-1">English</a></li>
                 <li role="presentation" class="divider"></li>
                 <li role="presentation"><a role="menuitem" onclick="toggleTheme()" id="slider"
                     tabindex="-1">{{'ChangeTheme' | translate}}</a></li>

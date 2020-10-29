@@ -1,0 +1,120 @@
+<div class="bgimg-intro">
+  <!-- START Intro SECTION -->
+
+  <div class="container">
+    <div class="row">
+      <div class="intro-setting-btn drop-style">
+        <div class="dropdown">
+          <button class="btn" type="button" id="menu1" data-toggle="dropdown">
+            <i class="fas fa-cog"></i>
+          </button>
+          <ul class="dropdown-menu animate__animated animate__fadeInDown" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" *ngIf="currentLang=='en'"
+                (click)="setLang('ar')">عربى</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" *ngIf="currentLang=='ar'"
+                (click)="setLang('en')">English</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" onclick="toggleTheme()" id="slider" tabindex="-1">Change
+                theme</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-12">
+
+        <div class="form-content-box margin_top animate__animated animate__fadeInDown">
+          <!-- details -->
+          <div class="details box-border">
+
+            <div class="main-login-text">
+              <h2>
+                Don't have an account ? <br> <br>
+                Create your account it takes less than a minute
+                <br>
+              </h2>
+            </div>
+            <!-- Form start -->
+            <form class="needs-validation" novalidate>
+
+              <div class="form-group">
+                <i class="fa fa-user input-icon"></i>
+                <input type="email" name="email" class="input-text1" placeholder="youname@4explain.com" required>
+                <div class="valid-feedback">correct (valid)</div>
+                <div class="invalid-feedback">Please enter your username (invalid).</div>
+              </div>
+              <div class="form-group">
+                <i class="fas fa-unlock-alt input-icon"></i>
+                <input type="password" name="Password" class="input-text1" placeholder="password" required>
+                <div class="valid-feedback">correct (valid)</div>
+                <div class="invalid-feedback">Please enter your correct Password (invalid).</div>
+              </div>
+              <div class="form-group captcha-test">
+                <input type="text" class="input-text" required id="captcha" name="captcha" placeholder="">
+
+
+                <div class="captcha-text">
+                  <img class="code" src="http://reusableforms.com/captcha?1585856927741" id="captcha_image" alt="" />
+                  <a class="reload" id="captcha_reload"><i class="fas fa-redo"></i></a>
+                </div>
+                <div class="valid-feedback">correct (valid)</div>
+                <div class="invalid-feedback">Please enter text (invalid).</div>
+              </div>
+              <div class="form-group remember-forgetpassword">
+                <div class="remember">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                  </label>
+                  <p class="remember-text">Remember me</p>
+                </div>
+                <div class="forgot-password">
+                  <a href="PasswordReset_en.html">Forget password</a>
+                </div>
+              </div>
+              <div class="form-group submit mb-0">
+
+                <!--<button  href="#" class="btnx1 btn-1 btn-block" type="submit">Login</button >-->
+                <a href="MobileVerification_Admin_en.html" class="btnx1 btn-1 btn-block" type="submit">Login</a>
+
+
+              </div>
+              <div class="copy-rights">
+                <p>© Copyright 2020 4Explain</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6 col-sm-12">
+
+        <div class="form-content-box margin_top animate__animated animate__fadeInDown">
+          <!-- details -->
+          <div class="details">
+            <div class="row">
+              <img src="./assets/img/logo.png" alt="logo" id="imag" class="logo-intro" />
+            </div>
+            <div class="main-intro-text">
+              <p>learning</p>
+              <h3>
+                anytime
+                <br>
+                anywhere
+              </h3>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- END Intro SECTION -->
+</div>
