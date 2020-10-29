@@ -2,7 +2,8 @@
   <div class="cpanel-logo">
 
     <a href="#" class="Logo-cp LogoTit xbardown">
-      <img src="./assets/img/logo-cpanel-dark.png" id="CpanelImag" alt="logo">
+      <img *ngIf="theme=='dark'" src="./assets/img/logo-cpanel-dark.png" id="CpanelImag" alt="logo">
+      <img *ngIf="theme=='light'" src="./assets/img/logo-cpanel-light.png" id="CpanelImag" alt="logo">
       <span class="theme-Bg"> {{'Student' | translate}} </span>
     </a>
   </div>

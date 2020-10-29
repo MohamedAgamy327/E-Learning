@@ -10,6 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class HeaderComponent implements OnInit {
 
+  theme: string;
+
   constructor(
     public translate: TranslateService
   ) {
@@ -17,7 +19,12 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    if (localStorage.getItem('theme-dark')) {
+      this.theme = 'dark';
+    }
+    else {
+      this.theme = 'light';
+    }
   }
 
 
