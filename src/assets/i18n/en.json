@@ -23,5 +23,14 @@
   "Notification": "Notification",
   "Recommendations": "Recommendations",
   "Responsibility": "Responsibility",
-  "Schedule": "Schedule"
+  "Schedule": "Schedule",
+  "DontHaveAccount": "Don't have an account ?",
+  "CreateAccountMessage":"Create your account it takes less than a minute",
+  "Learning":"learning",
+  "AnyTime":"anytime",
+  "AnyWhere":"anywhere",
+  "ForgetPassword":"Forget Password ",
+  "RememberMe":"Remember Me",
+  "Login":"Login",
+  "CopyRights":"© Copyright 2020 4Explain"
 }

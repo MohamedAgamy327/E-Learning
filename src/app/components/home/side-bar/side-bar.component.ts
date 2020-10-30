@@ -1,6 +1,8 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { CredentialService } from 'src/app/core/services';
+
 
 @Component({
   selector: 'app-side-bar',
@@ -15,7 +17,7 @@ export class SideBarComponent {
   @Inject(DOCUMENT) private document: Document
 
   constructor(
-    public translate: TranslateService
+    public translate: TranslateService,   public credentialService: CredentialService
   ) {
   }
   setLang(lang: any) {
@@ -37,6 +39,11 @@ export class SideBarComponent {
     style.rel = 'stylesheet';
     style.href = `${cssURL}`;
     head.appendChild(style);
+  }
+  logout() {
+  
+    localStorage.removeItem('email');
+    this.credentialService.logout();
   }
 
 }

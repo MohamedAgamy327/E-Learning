@@ -31,25 +31,25 @@
 
             <div class="main-login-text">
               <h2>
-                Don't have an account ? <br> <br>
-                Create your account it takes less than a minute
+                {{'DontHaveAccount' | translate}} <br> <br>
+                {{'CreateAccountMessage' | translate}}
                 <br>
               </h2>
             </div>
             <!-- Form start -->
-            <form class="needs-validation" novalidate>
+            <form [formGroup]="loginForm" class="needs-validation">
 
               <div class="form-group">
                 <i class="fa fa-user input-icon"></i>
-                <input type="email" name="email" class="input-text1" placeholder="youname@4explain.com" required>
-                <div class="valid-feedback">correct (valid)</div>
-                <div class="invalid-feedback">Please enter your username (invalid).</div>
+                <input type="email" name="email" class="input-text1" placeholder="youname@4explain.com" formControlName="email">
+                <!-- <div class="valid-feedback">correct (valid)</div>
+                <div class="invalid-feedback">Please enter your username (invalid).</div> -->
               </div>
               <div class="form-group">
                 <i class="fas fa-unlock-alt input-icon"></i>
-                <input type="password" name="Password" class="input-text1" placeholder="password" required>
-                <div class="valid-feedback">correct (valid)</div>
-                <div class="invalid-feedback">Please enter your correct Password (invalid).</div>
+                <input formControlName="password" type="password" name="Password" class="input-text1" placeholder="password" required>
+                <!-- <div class="valid-feedback">correct (valid)</div>
+                <div class="invalid-feedback">Please enter your correct Password (invalid).</div> -->
               </div>
               <div class="form-group captcha-test">
                 <input type="text" class="input-text" required id="captcha" name="captcha" placeholder="">
@@ -59,8 +59,8 @@
                   <img class="code" src="http://reusableforms.com/captcha?1585856927741" id="captcha_image" alt="" />
                   <a class="reload" id="captcha_reload"><i class="fas fa-redo"></i></a>
                 </div>
-                <div class="valid-feedback">correct (valid)</div>
-                <div class="invalid-feedback">Please enter text (invalid).</div>
+                <!-- <div class="valid-feedback">correct (valid)</div>
+                <div class="invalid-feedback">Please enter text (invalid).</div> -->
               </div>
               <div class="form-group remember-forgetpassword">
                 <div class="remember">
@@ -68,21 +68,21 @@
                     <input type="checkbox" value="">
                     <span class="cr"><i class="cr-icon fas fa-check"></i></span>
                   </label>
-                  <p class="remember-text">Remember me</p>
+                  <p class="remember-text">{{'RememberMe' | translate}}</p>
                 </div>
                 <div class="forgot-password">
-                  <a href="PasswordReset_en.html">Forget password</a>
+                  <a href="PasswordReset_en.html">{{'ForgetPassword' | translate}}</a>
                 </div>
               </div>
               <div class="form-group submit mb-0">
 
                 <!--<button  href="#" class="btnx1 btn-1 btn-block" type="submit">Login</button >-->
-                <a href="MobileVerification_Admin_en.html" class="btnx1 btn-1 btn-block" type="submit">Login</a>
+                <button (click)="login()" class="btnx1 btn-1 btn-block" type="submit">{{'Login' | translate}}</button>
 
 
               </div>
               <div class="copy-rights">
-                <p>© Copyright 2020 4Explain</p>
+                <p>{{'CopyRights' | translate}}</p>
               </div>
             </form>
           </div>
@@ -95,14 +95,14 @@
           <!-- details -->
           <div class="details">
             <div class="row">
-              <img src="./assets/img/logo.png" alt="logo" id="imag" class="logo-intro" />
+              <img src="./assets/img/logo-intro.png" alt="logo" id="imag" class="logo-intro" />
             </div>
             <div class="main-intro-text">
-              <p>learning</p>
+              <p>{{'Learning' | translate}}</p>
               <h3>
-                anytime
+                {{'AnyTime' | translate}}
                 <br>
-                anywhere
+                {{'AnyWhere' | translate}}
               </h3>
             </div>
 

@@ -23,5 +23,17 @@
   "Notification": "الاشعارات",
   "Recommendations": "توصيات",
   "Responsibility": "المسئوليات",
-  "Schedule": "الجدول"
+  "Schedule": "الجدول",
+  "DontHaveAccount": "لا تمتلك حساب ؟",
+    "CreateAccountMessage":"إنشاء حسابك يستغرق أقل من دقيقة",
+    "Learning":"تعلم",
+    "AnyTime":"فى أى وقت",
+    "AnyWhere":"فــى أى مكــان",
+    "ForgetPassword":"نسيت كلمة المرور",
+    "RememberMe":"تذكرني",
+    "Login":"دخول",
+    "CopyRights":"© حقوق الطبع والنشر 2020  4Explain"
+
+    
+
 }

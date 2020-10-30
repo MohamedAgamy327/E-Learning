@@ -19,7 +19,7 @@ export class LoginGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-    if (this.credentialService.isLoggedIn() && this.credentialService.checkTokenExpire()) {
+     if (localStorage.getItem('email')) {
       this.route.navigate(['home']);
       return false;
     }
